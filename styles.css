@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 15px 15px 1px #ff8080, 15px 15px 1px 2px rgb(0, 0, 0);
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.edit-mode {
+  color: #ccc;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-input-filter {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 5px solid #ffa580;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto 10px auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px rgb(0, 0, 0);
+}
+.btn:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+.btn :hover {
+  background-color: #f1f1f1;
+}
+
+.remove-item {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+.remove-item.text-red {
+  color: red;
+}
+
+/* Items */
+.items {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items li {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 5px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .items li {
+    width: 100%;
+  }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid #95a4ff;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*# sourceMappingURL=styles.css.map */

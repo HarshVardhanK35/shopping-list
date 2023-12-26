@@ -68,6 +68,8 @@ const addItemOnSubmit = (e) => {
   checkUI();
 
   itemInput.value = ''
+
+
 }
 
 // Add item on DOM
@@ -279,7 +281,9 @@ function checkUI(){
 
   formBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Add Item';
   formBtn.style.backgroundColor = '#ffa580';
-  isEditMode = false
+  isEditMode = false;
+
+
 }
 
 // Event Listeners
